@@ -1,0 +1,140 @@
+$fontFamily: 'Nunito Sans', sans-serif;
+$fontExtraBold: 800
+$fontSemiBold: 600
+$fontLight: 300
+  
+*
+  margin: 0
+  box-sizing: border-box
+
+body
+  background-color: rgb(32,45,54)
+
+header
+  position: fixed
+  z-index: 1000
+  width: 100%
+  padding: 34px
+  background-color: rgb(43,55,67)
+
+.container
+  width: 1250px
+  margin: auto
+  display: flex
+  justify-content: space-between
+
+.where_in_the_world
+  color: #ffffff
+  font-family: $fontFamily
+  font-weight: $fontExtraBold
+  
+.mode
+  display: flex
+  color: #ffffff
+  font-family: $fontFamily
+  font-weight: $fontLight
+  cursor: pointer
+
+.moon-icon
+  width: 20px
+  margin-right: 10px
+
+.moon-icon
+  fill: #ffffff
+
+main
+  padding: 140px 0 0
+
+.search
+  width: 470px
+  padding: 18px 60px
+  background-color: rgb(43,55,67) 
+  background-image: url('./image/search-sharp.svg') 
+  background-repeat: no-repeat
+  background-size: 25px
+  background-position: 4% 45%
+  border: 0
+  border-radius: 5px
+  color: #ffffff
+  font-family: $fontFamily
+  font-weight: $fontLight
+
+.search::placeholder 
+  color: hsl(0, 0%, 52%)
+
+.filter
+  position: relative
+  width: 190px
+  padding: 18px
+  background-color: rgb(43,55,67)
+  border-radius: 5px
+  color: #ffffff
+  font-family: $fontFamily
+  font-weight: $fontLight
+  font-size: 14px
+  cursor: pointer
+
+.filter:after 
+  content: ""
+  width: 0
+  height: 0
+  position: absolute
+  z-index: 10
+  right: 16px
+  top: 50%
+  margin-top: -3px
+  border-width: 6px 6px 0 6px
+  border-style: solid
+  border-color: #ffffff transparent
+
+.filterDropDown
+  display: none
+  position: absolute
+  left: 0
+  top: 60px
+  width: 100%
+  background-color: rgb(43,55,67)
+  border-radius: 5px
+  padding: 18px
+
+.filter li 
+  padding: 5px 0
+  list-style: none 
+
+.active
+  display: block
+
+.countries
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.countrie
+  margin: 55px 0 0
+  font-family: $fontFamily
+  font-weight: $fontExtraBold
+  color: #ffffff
+  width: 255px
+  background-color: rgb(43,55,67)
+  border-radius: 5px
+  cursor: pointer
+
+.flagIMG
+  width: 100%
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+
+.countrie div
+  margin: 21px 20px 39px
+
+.name
+  margin: 21px 0
+
+.info
+  font-weight: $fontLight
+  font-size: 14px
+  margin: 4px 0
+
+.info span
+  color: #d3d3d3
