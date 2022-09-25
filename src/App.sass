@@ -14,12 +14,14 @@ header
   position: fixed
   z-index: 1000
   width: 100%
-  padding: 34px
+  padding: 27px
   background-color: rgb(43,55,67)
 
 .container
   width: 1250px
   margin: auto
+
+.Df_JCsb
   display: flex
   justify-content: space-between
 
@@ -27,6 +29,8 @@ header
   color: #ffffff
   font-family: $fontFamily
   font-weight: $fontExtraBold
+  text-decoration: none
+  font-size: 25px
   
 .mode
   display: flex
@@ -34,6 +38,8 @@ header
   font-family: $fontFamily
   font-weight: $fontLight
   cursor: pointer
+  display: flex
+  align-items: center
 
 .moon-icon
   width: 20px
@@ -106,11 +112,9 @@ main
 
 .countries
   width: 100%
-  display: flex
   flex-wrap: wrap
-  justify-content: space-between
 
-.countrie
+.country
   margin: 55px 0 0
   font-family: $fontFamily
   font-weight: $fontExtraBold
@@ -119,22 +123,24 @@ main
   background-color: rgb(43,55,67)
   border-radius: 5px
   cursor: pointer
+  text-decoration: none
 
 .flagIMG
   width: 100%
   border-top-right-radius: 5px
   border-top-left-radius: 5px
 
-.countrie div
+.country div
   margin: 21px 20px 39px
 
 .name
   margin: 21px 0
 
 .info
-  font-weight: $fontLight
+  font-weight: $fontSemiBold
   font-size: 14px
   margin: 4px 0
 
 .info span
+  font-weight: $fontLight
   color: #d3d3d3
