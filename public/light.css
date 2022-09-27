@@ -1,0 +1,52 @@
+body{
+  background-color: rgb(250, 250, 250);
+}
+header{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}
+.where_in_the_world{
+  color: rgb(15,16,19);
+}
+.mode{
+  color: rgb(15,16,19);
+}
+.search{
+  color: #000000;
+  background-color: rgb(255,255,255);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}
+.search::placeholder {
+  color: hsl(0, 0%, 0%);
+}
+.filter{
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}
+.filter:after {
+  border-color: rgb(0, 0, 0) transparent;
+}
+.filterDropDown{
+  background-color: rgb(255, 255, 255);
+}
+.country{
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}
+.info span{
+  color: #000000
+}
+.back{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}
+section {
+  color: #000000;
+}
+.border-countries span{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.034);
+}

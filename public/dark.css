@@ -1,0 +1,46 @@
+body{
+  background-color: rgb(32,45,54);
+}
+header{
+  background-color: rgb(43,55,67);
+}
+.where_in_the_world{
+  color: rgb(255, 255, 255);
+}
+.mode{
+  color: #ffffff;
+}
+.search{
+  color: #ffffff;
+  background-color: rgb(43,55,67);
+}
+.search::placeholder {
+  color: hsl(0, 0%, 52%);
+}
+.filter{
+  color: #ffffff;
+  background-color: rgb(43,55,67);
+}
+.filter:after {
+  border-color: rgb(255, 255, 255) transparent;
+}
+.filterDropDown{
+  background-color: rgb(43,55,67);
+}
+.country{
+  color: #ffffff;
+  background-color: rgb(43,55,67);
+}
+.info span{
+  color: #d3d3d3
+}
+.back{
+  background-color: rgb(43,55,67);
+  color: #ffffff;
+}
+section {
+  color: #ffffff
+}
+.border-countries span{
+  background-color: rgb(43,55,67)
+}

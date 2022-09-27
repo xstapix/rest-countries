@@ -6,7 +6,6 @@ import '../App.sass';
 const Home = () => {
   const [countries, setCountries] = useState()
   const [filtered, setFiltered] = useState()
-  // const [theme, setTheme] = useState(false)
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all')
@@ -36,10 +35,6 @@ const Home = () => {
     document.getElementById('filterDropDown').classList.toggle("active")
   }
 
-  // const handleTheme = () => {
-  //   theme === true ? setTheme(false) : setTheme(true)
-  // }
-
   return (
     <main>
       <div className='container Df_JCsb'>
@@ -63,7 +58,7 @@ const Home = () => {
       <div className='container'>
         <div className='countries Df_JCsb'>
         {filtered ? filtered.map(item => (
-          <Link to='/country' className='country' key={item.name.common}>
+          <Link to={`/country/${item.name.common}`} className='country' key={item.name.common}>
             <img src={item.flags.svg} alt='flag' className='flagIMG'/>
             <div>
               <p className='name'>{item.name.common}</p>

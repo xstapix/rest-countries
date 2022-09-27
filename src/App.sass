@@ -7,15 +7,11 @@ $fontLight: 300
   margin: 0
   box-sizing: border-box
 
-body
-  background-color: rgb(32,45,54)
-
 header
   position: fixed
   z-index: 1000
   width: 100%
   padding: 27px
-  background-color: rgb(43,55,67)
 
 .container
   width: 1250px
@@ -26,7 +22,6 @@ header
   justify-content: space-between
 
 .where_in_the_world
-  color: #ffffff
   font-family: $fontFamily
   font-weight: $fontExtraBold
   text-decoration: none
@@ -34,9 +29,8 @@ header
   
 .mode
   display: flex
-  color: #ffffff
   font-family: $fontFamily
-  font-weight: $fontLight
+  font-weight: $fontSemiBold
   cursor: pointer
   display: flex
   align-items: center
@@ -54,14 +48,12 @@ main
 .search
   width: 470px
   padding: 18px 60px
-  background-color: rgb(43,55,67) 
   background-image: url('./image/search-sharp.svg') 
   background-repeat: no-repeat
   background-size: 25px
   background-position: 4% 45%
   border: 0
   border-radius: 5px
-  color: #ffffff
   font-family: $fontFamily
   font-weight: $fontLight
 
@@ -72,11 +64,9 @@ main
   position: relative
   width: 190px
   padding: 18px
-  background-color: rgb(43,55,67)
   border-radius: 5px
-  color: #ffffff
   font-family: $fontFamily
-  font-weight: $fontLight
+  font-weight: $fontSemiBold
   font-size: 14px
   cursor: pointer
 
@@ -91,7 +81,6 @@ main
   margin-top: -3px
   border-width: 6px 6px 0 6px
   border-style: solid
-  border-color: #ffffff transparent
 
 .filterDropDown
   display: none
@@ -99,7 +88,6 @@ main
   left: 0
   top: 60px
   width: 100%
-  background-color: rgb(43,55,67)
   border-radius: 5px
   padding: 18px
 
@@ -116,11 +104,7 @@ main
 
 .country
   margin: 55px 0 0
-  font-family: $fontFamily
-  font-weight: $fontExtraBold
-  color: #ffffff
   width: 255px
-  background-color: rgb(43,55,67)
   border-radius: 5px
   cursor: pointer
   text-decoration: none
@@ -135,12 +119,14 @@ main
 
 .name
   margin: 21px 0
+  font-family: $fontFamily
+  font-weight: $fontExtraBold
 
 .info
+  font-family: $fontFamily
   font-weight: $fontSemiBold
   font-size: 14px
   margin: 4px 0
 
 .info span
   font-weight: $fontLight
-  color: #d3d3d3
