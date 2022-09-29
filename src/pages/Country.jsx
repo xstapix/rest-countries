@@ -1,4 +1,4 @@
-import './Country.sass'
+import '../App.sass'
 import {Link, useParams} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
@@ -36,7 +36,7 @@ const Country = () => {
                     <p className='info description'>Sub Region: <span>{countryData[0].subregion}</span></p>
                     <p className='info description'>Capital: <span>{countryData[0].capital}</span></p>
                   </div>
-                  <div>
+                  <div className='other-info'>
                     <p className='info description'>Top Level Domain: <span>{countryData[0].tld}</span></p>
                     {/* <p className='info description'>Currencies: <span>{countryData[0].currencies.GTQ.name}</span></p> */}
                     {/* <p className='info description'>Languages: <span>{countryData[0].languages.spa}</span></p> */}

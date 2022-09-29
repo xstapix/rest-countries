@@ -1,7 +1,9 @@
-$fontFamily: 'Nunito Sans', sans-serif;
+$fontFamily: 'Nunito Sans', sans-serif
 $fontExtraBold: 800
 $fontSemiBold: 600
 $fontLight: 300
+
+@import "./pages/Countries", "./pages/Country"
   
 *
   margin: 0
@@ -11,13 +13,13 @@ header
   position: fixed
   z-index: 1000
   width: 100%
-  padding: 27px
 
 .container
   width: 1250px
   margin: auto
+  padding: 27px
 
-.Df_JCsb
+.Df_JCsb, .header_Df_JCsb
   display: flex
   justify-content: space-between
 
@@ -32,7 +34,6 @@ header
   font-family: $fontFamily
   font-weight: $fontSemiBold
   cursor: pointer
-  display: flex
   align-items: center
 
 .moon-icon
@@ -42,91 +43,3 @@ header
 .moon-icon
   fill: #ffffff
 
-main
-  padding: 140px 0 0
-
-.search
-  width: 470px
-  padding: 18px 60px
-  background-image: url('./image/search-sharp.svg') 
-  background-repeat: no-repeat
-  background-size: 25px
-  background-position: 4% 45%
-  border: 0
-  border-radius: 5px
-  font-family: $fontFamily
-  font-weight: $fontLight
-
-.search::placeholder 
-  color: hsl(0, 0%, 52%)
-
-.filter
-  position: relative
-  width: 190px
-  padding: 18px
-  border-radius: 5px
-  font-family: $fontFamily
-  font-weight: $fontSemiBold
-  font-size: 14px
-  cursor: pointer
-
-.filter:after 
-  content: ""
-  width: 0
-  height: 0
-  position: absolute
-  z-index: 10
-  right: 16px
-  top: 50%
-  margin-top: -3px
-  border-width: 6px 6px 0 6px
-  border-style: solid
-
-.filterDropDown
-  display: none
-  position: absolute
-  left: 0
-  top: 60px
-  width: 100%
-  border-radius: 5px
-  padding: 18px
-
-.filter li 
-  padding: 5px 0
-  list-style: none 
-
-.active
-  display: block
-
-.countries
-  width: 100%
-  flex-wrap: wrap
-
-.country
-  margin: 55px 0 0
-  width: 255px
-  border-radius: 5px
-  cursor: pointer
-  text-decoration: none
-
-.flagIMG
-  width: 100%
-  border-top-right-radius: 5px
-  border-top-left-radius: 5px
-
-.country div
-  margin: 21px 20px 39px
-
-.name
-  margin: 21px 0
-  font-family: $fontFamily
-  font-weight: $fontExtraBold
-
-.info
-  font-family: $fontFamily
-  font-weight: $fontSemiBold
-  font-size: 14px
-  margin: 4px 0
-
-.info span
-  font-weight: $fontLight

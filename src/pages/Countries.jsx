@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 import '../App.sass';
 
-const Home = () => {
+const Countries = () => {
   const [countries, setCountries] = useState()
   const [filtered, setFiltered] = useState()
 
@@ -59,13 +59,16 @@ const Home = () => {
         <div className='countries Df_JCsb'>
         {filtered ? filtered.map(item => (
           <Link to={`/country/${item.name.common}`} className='country' key={item.name.common}>
-            <img src={item.flags.svg} alt='flag' className='flagIMG'/>
-            <div>
-              <p className='name'>{item.name.common}</p>
-              <p className='info'>Population: <span>{item.population} </span></p>
-              <p className='info'>Region: <span>{item.region}</span></p>
-              <p className='info'>Capital: <span>{item.capital}</span></p>
+            <div className='country-card'>
+              <img src={item.flags.svg} alt='flag' className='flagIMG'/>
+              <div>
+                <p className='name'>{item.name.common}</p>
+                <p className='info'>Population: <span>{item.population} </span></p>
+                <p className='info'>Region: <span>{item.region}</span></p>
+                <p className='info'>Capital: <span>{item.capital}</span></p>
+              </div>
             </div>
+            
           </Link>
           )) : ('Loading...')}
         </div>
@@ -74,4 +77,4 @@ const Home = () => {
   );
 }
 
-export {Home}
+export {Countries}

@@ -1,0 +1,96 @@
+$fontFamily: 'Nunito Sans', sans-serif
+$fontExtraBold: 800
+$fontSemiBold: 600
+$fontLight: 300
+  
+main
+  padding: 140px 0 0
+
+.search
+  width: 470px
+  padding: 18px 60px
+  background-image: url('../image/search-sharp.svg') 
+  background-repeat: no-repeat
+  background-size: 25pxgit
+  background-position: 4% 45%
+  border: 0
+  border-radius: 5px
+  font-family: $fontFamily
+  font-weight: $fontLight
+   
+.search::placeholder 
+  color: hsl(0, 0%, 52%)
+
+.filter
+  position: relative
+  width: 190px
+  padding: 18px
+  border-radius: 5px
+  font-family: $fontFamily
+  font-weight: $fontSemiBold
+  font-size: 14px
+  cursor: pointer
+
+.filter:after 
+  content: ""
+  width: 0
+  height: 0
+  position: absolute
+  z-index: 10
+  right: 16px
+  top: 50%
+  margin-top: -3px
+  border-width: 6px 6px 0 6px
+  border-style: solid
+
+.filterDropDown
+  display: none
+  position: absolute
+  left: 0
+  top: 60px
+  width: 100%
+  border-radius: 5px
+  padding: 18px
+
+.filter li 
+  padding: 5px 0
+  list-style: none 
+
+.active
+  display: block
+
+.countries
+  width: 100%
+  flex-wrap: wrap
+
+.country
+  margin: 55px 0 0
+  text-decoration: none
+
+.country-card
+  width: 255px
+  border-radius: 5px
+  cursor: pointer
+
+.country-card div
+  padding: 21px 20px 39px
+
+.flagIMG
+  width: 100%
+  height: 170px
+  border-top-right-radius: 5px
+  border-top-left-radius: 5px
+
+.name
+  margin: 21px 0
+  font-family: $fontFamily
+  font-weight: $fontExtraBold
+
+.info
+  font-family: $fontFamily
+  font-weight: $fontSemiBold
+  font-size: 14px
+  margin: 4px 0
+
+.info span
+  font-weight: $fontLight
