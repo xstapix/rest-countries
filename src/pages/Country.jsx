@@ -11,9 +11,7 @@ const Country = () => {
       .then(response => response.json())
       .then(data => setCountryData(data))
       .catch(error => console.log('Rest-API error...', error))
-  }, [countryName])
-
-  console.log(countryData);
+  }, [countryName]);
 
   return (
     <main>
@@ -30,22 +28,22 @@ const Country = () => {
                 <h1>{countryData[0].name.common}</h1> 
                 <div className='Df_JCsb'>
                   <div>
-                    <p className='info description'>Native Name: <span>gfd</span></p>
+                    <p className='info description'>Native Name: <span>{countryData[0].name.common}</span></p>
                     <p className='info description'>Population: <span>{countryData[0].population}</span></p>
                     <p className='info description'>Region: <span>{countryData[0].region}</span></p>
                     <p className='info description'>Sub Region: <span>{countryData[0].subregion}</span></p>
                     <p className='info description'>Capital: <span>{countryData[0].capital}</span></p>
                   </div>
                   <div className='other-info'>
-                    <p className='info description'>Top Level Domain: <span>{countryData[0].tld}</span></p>
+                    {/* <p className='info description'>Top Level Domain: <span>{countryData[0].tld}</span></p> */}
                     {/* <p className='info description'>Currencies: <span>{countryData[0].currencies.GTQ.name}</span></p> */}
                     {/* <p className='info description'>Languages: <span>{countryData[0].languages.spa}</span></p> */}
                   </div>
                 </div>
-                <p className='info description border-countries'>
+                {/* <p className='info description border-countries'>
                   Border Countries: <span></span>
                   <span></span> 
-                </p>
+                </p> */}
               </section>
             </>
           : ("loading...")}
